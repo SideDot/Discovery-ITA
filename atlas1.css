@@ -1,0 +1,201 @@
+/*dcument style*/
+* {box-sizing: border-box;}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  line-height: 1.5;
+}
+header {
+    background-image: url(https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    min-height: 970px;
+    background-position: center;
+    background-size: cover;
+}
+/*ink styles*/
+main a{
+  text-decoration: none;
+  color: #1472ff;
+}
+/*topnav with links*/
+.topnav {
+  overflow: hidden;
+  background-color: rgb(15, 15, 15);
+  height: 55px;
+  font-size: 14px;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  height: 55px;
+}
+
+.topnav input[type=text] {
+  float: right;
+  width: 800px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc; 
+    background-color: #ddd; 
+  }
+}
+
+.spec-link {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.07em;
+  display: inline-block;
+  position: relative;
+}
+.spec-link:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.spec-link:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+
+.head1 {
+    color: white;
+    text-align: center;
+}
+
+.head1.headmodif {
+    font-size: 50px;
+}
+
+/*central button style*/
+.btn1 {
+    text-align: center;
+}
+
+.explorer {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.btn1 {
+    width: 180px;
+    height: 55px;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background-color: rgb(3, 3, 3);
+    border: none;
+    border-radius: 0px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+  
+.btn1:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 15px 20px rgba(190, 190, 190, 0.4);
+    color: rgb(0, 0, 0);
+    transform: translateY(-7px);
+}
+
+
+/*info discovery*/
+.info-discovery {
+  margin-left: 194px;
+  margin-right: 294px;
+  padding: 1rem;
+  text-align: left;
+}
+
+.text-info-disc {
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  text-align: justify;
+  column-gap: 2px;
+}
+
+.disc-use {
+  font-size: 18px;
+  font-family: Roboto, sans-serif;
+  text-align: justify;
+  column-gap: 2px;
+}
+
+.triangles {
+  float: left;
+}
+.triangles2 {
+  float: right;
+}
+
+/*infdev*/
+.txt-title{
+  text-transform: uppercase;
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer {
+    background-color: black;
+    overflow: hidden;
+    color: white;
+}
+
+.footer-link {
+  display: inline-block;
+  text-decoration: underline;
+  color: white;
+  font-family: Roboto, sans-serif;
+}
+
+.footer-link:hover {
+  display: inline-block;
+  color: rgb(201, 201, 201);
+  font-family: Roboto, sans-serif;
+}
+
+
