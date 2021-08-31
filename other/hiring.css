@@ -1,0 +1,15 @@
+* {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+/*bground img*/
+.container {
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwallpaper.dog%2Fplain-black-desktop-wallpapers&psig=AOvVaw2Cmy-brSu7bCa_gYTwxhjA&ust=1630361227905000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCKDf0IOf1_ICFQAAAAAdAAAAABAD);
+    min-height: 970px;
+    background-position: center;
+    background-size: cover;
+
+}
