@@ -8,13 +8,14 @@
     <meta name="description" content="IntraConnect Discovery. La conoscenza a portata di mano. Scopri come funziona il corpo umano, come eseguire un'equazione, la storia di Pompei oppure quando è nato napoleone. ">
     <meta name="keywords" content="info, matematica, italiano, inglese, storia, geografia, fisica, filosofia, chimica, scienze, informatica, letteratura, francese, tedesco, cinese, discovery, intraconnect, intraconnect discovery, sport, ginnastica, stretching, python, imparare, java, c, c++, informazione, scuola, liceo, scuole medie">
     <meta name="author" content="IntraConnect LLC">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://www.intraconnect.it/discovery/discovery.css">
     <link href="https://www.intraconnect.it/circle-cropped.png" rel='icon' type="image/png">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <!--NB: Questo sito è NON-PROFIT di IntraConenct LLC. USO GRATUITO PER SCOPI ACCADEMICI.-->
     <!--NOTE: This site is a NON-PROFIT by IntraConnect LLC. FREE FOR SCHOLARLY USE.-->
     <!--IL SITO E' DA QUI IN INGLESE | THE SITE IS ONLY IN ENGLISH FROM NOW ON-->
@@ -35,7 +36,7 @@
     <br>
     <div class="container">
         <div class="explorer">
-            <a href="https://www.intraconnect.it"><button class="btn1 underline-center">Vai a Definizioni</button></a>
+            <a href="./other/defs.htm"><button class="btn1 underline-center">Vai al Catalogo</button></a>
         </div>
     </div>
     
@@ -86,7 +87,7 @@
                                 <img src="./images/personnel.jpg" alt="personale richiesto" class="card-img-top">
                                 <div class="card-body">
                                     <h4 class="card-title">Richiesta Personale Qualificato</h4>
-                                    <p class="card-text">Noi di IntraConnect siamo poche persone e abbiamo bisogno di programmatori qualificati.</p>
+                                    <p class="card-text">Noi di IntraConnect siamo poche persone e abbiamo bisogno di programmatori qualificati.</p><br><br>
                                     <a href="./other/hiring.htm" target="_blank" class="btn btn-primary">Informati</a>
                                 </div>
                             </div>
@@ -96,8 +97,44 @@
                                 <img src="./images/Git-Icon-Black.png" alt="personale richiesto" class="card-img-top">
                                 <div class="card-body">
                                     <h4 class="card-title">Prossima Versione</h4>
-                                    <p class="card-text">La prossima versione di Discovery(1.0.0) sarà disponibie dal 27/09/21 con importanti aggiunte quali la creazione facilitata di contenuti.</p>
-                                    <a href="https://www.intraconnect.it" target="_blank" class="btn btn-primary">Informati</a>
+                                    <p class="card-text">La prossima versione di Discovery(1.0.0) sarà disponibile dal 27/09/21 con importanti aggiunte.</p><br>
+                                    <!--button modal activator-->
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#currentVersion" title="Versione Attuale">v0.2.1</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="currentVersion" tabindex="-1" aria-labelledby="currentVersionLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="currentVersionLabel">Versione Corrente(v0.2.1)</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p></p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type='button' class='btn btn-primary' data-toggle="modal" data-bs-target='#nextVersion' title="Prossima Versione">v1.0.0</button>
+                                    <!--modal 2-->
+                                    <div class="modal fade" id="nextVersion" tabindex="-1" aria-labelledby="nextVersionLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="nextVersionLabel">Versione 1.0.0</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>sdfghjkl;'</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -117,8 +154,10 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 text-center text-justify">
-                    <h4 class="font-weight-bold">Note</h4>
-                    <p>USO GRATUITO PER SCOPI ACCADEMICI</p>
+                    <h4 class="font-weight-bold">Seguici</h4>
+                    <a href="https://github.com/SideDot/discovery.intraconnect.github.io" class='follow-social footer-link' title="GitHub"><i class="bi bi-github"></i></a>
+                    <a href="https://www.instagram.com/intra.connect/" class='follow-social footer-link' title="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="https://www.youtube.com/channel/UCmYcATSC7w1TR4aK29pTs8g" class='follow-social footer-link' title="YouTube"><i class="bi bi-youtube"></i></a></p>
                 </div>
                 <div class="col-sm-4 text-center text-justify">
                     <h4 class="font-weight-bold">IntraConnect &copy</h4>
@@ -131,8 +170,9 @@
                 </div>
             </div>
         </div>
-        <p style="text-align:right; font-size: 10px;">IntraConnect Discovery ver. 0.1.1</p>
+        <p style="text-align:right; font-size: 11px;"><a href='https://github.com/SideDot/discovery.intraconnect.github.io' class="footer-link">IntraConnect Discovery ver. 0.2.1</a></p>
     </footer>
     <script src="./atlas1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

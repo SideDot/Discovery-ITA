@@ -186,16 +186,19 @@ footer {
 }
 
 .footer-link {
-  display: inline-block;
-  text-decoration: underline;
+  text-decoration: none;
   color: white;
   font-family: Roboto, sans-serif;
 }
 
+.follow-social{
+  font-size: 18px;
+}
+
 .footer-link:hover {
-  display: inline-block;
   color: rgb(201, 201, 201);
   font-family: Roboto, sans-serif;
+  text-decoration: underline;
 }
 
 
