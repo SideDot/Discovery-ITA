@@ -24,7 +24,7 @@
     <header>
     <div class="topnav">
         <a href="#home" class="spec-link"> <i class="bi bi-house-fill"></i> Home</a>
-        <a href="#infdev" class="spec-link"><i class="bi bi-code-slash"></i> InfDev</a>
+        <a href="#infdev" class="spec-link"><i class="bi bi-code-slash"></i> Changelog</a>
         <a href="#help" class="spec-link"><i class="bi bi-question-lg"></i> Aiuto</a>
         <a href="https://www.intraconnect.it" class="spec-link"><i class="bi bi-box-arrow-up-right"></i> Torna ad IntraConnect</a>
         <input type="text" placeholder="Cerca in Discovery">
@@ -68,7 +68,7 @@
     <main>
         <div class="info-discovery">
             <div class="infdev-txt" id="infdev">
-                <center><h1 class="txt-title">InfDev Discovery | Versione 0.1.1</h1></center>
+                <center><h1 class="txt-title">ChangeLog | Versione 0.1.1</h1></center>
                 <br>
                 <div class="container">
                     <div class="row">
@@ -109,7 +109,13 @@
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <p></p>
+                                                    <p>
+                                                        La versione attuale di Discovery è la seconda delle 10 versioni BETA prima del rilascio completo.
+                                                    </p>
+                                                    <hr>
+                                                    <p class='text-secondary'>
+                                                        Non ci sono note importanti.
+                                                    </p>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -117,17 +123,41 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <button type='button' class='btn btn-primary' data-toggle="modal" data-bs-target='#nextVersion' title="Prossima Versione">v1.0.0</button>
-                                    <!--modal 2-->
+                                    <!--button modal activator 2-->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#nextVersion" title="Prossima Versione">v1.0.0</button>
+                                    <!-- Modal 2-->
                                     <div class="modal fade" id="nextVersion" tabindex="-1" aria-labelledby="nextVersionLabel" aria-hidden="true">
                                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="nextVersionLabel">Versione 1.0.0</h5>
+                                                    <h5 class="modal-title" id="nextVersionLabel">Prossima Versione(v1.0.0)</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                 </div>
-                                                <div class="modal-body">
-                                                    <p>sdfghjkl;'</p>
+                                                <div class="modal-body text-justify">
+                                                    <p id="counterActive" class="text-success"></p>
+                                                    <p id='counterExpired' class="text-danger"></p>
+                                                    <hr>
+                                                    <p>
+                                                        La prossima versione di Discovery includerà delle aggiunte nuove ed importanti:
+                                                        <ul>
+                                                            <li>Aggiunta Rapida del materiale</li>
+                                                            <li>Barra di ricerca funzionante</li>
+                                                            <li>Nuovo Materiale (aggiunto dagli sviluppatori)</li>
+                                                        </ul>
+                                                        Alcune note sulle seguenti:
+                                                        <ol>
+                                                            <li><em><strong>L'Aggiunta Rapida</strong></em> sarà un metodo per inserire il materiale in maniera piu veloce, tramite un form. Per accedere al form si dovrà cliccare sul tasto "+" in alto a destra vicino alla barra di ricerca. Il form si presenterà secondo la struttura di <strong>titolo, descrizione, contenuto e allegati(immagini)</strong>. Non sarà necessario includere del testo nel contenuto(si possono usare immagini di appunti), ma sarà richiesto aggiungere una descrizione breve dell'argomento.</li>
+                                                            <br>
+                                                            <li><em><strong>La barra di ricerca</strong></em> non sarà funzionante fino alla prossima versione, oppure, potrebbe esserlo ma malfunzionante. Una volta resa operativa, si potrà trovare un argomento anche dalla home page. Una volta che i cambiamenti saranno effettuati, la barra di ricerca non si troverà più in alto, <strong>ma al posto del tasto 'vai al catalogo'.</strong></li>
+                                                            <br>
+                                                            <li><em><strong>Il Nuovo Materiale</strong></em> aggiunto dagli sviluppatori sarà inerente a materie non avanzate in quanto siamo appena arrivati in seconda :). Crediamo possa variare da materie come la Matematica fino alla Fisica.</li>
+                                                        </ol>
+                                                        <hr>
+                                                        <div class="text-secondary">
+                                                            <blockquote>Come <strong>ulteriore aggiunta</strong>, ci auguriamo che <strong>la libertà d'uso concessa da questo software non sia abusata</strong>. In caso contrario ci vedremo <strong>costretti a rafforzare le misure di sicurezza aggiungendo un sistema di account</strong>. In ogni caso, vi ringraziamo per la vostra eventuale cooperazione.</blockquote>
+                                                            <figcaption>-Il team di IntraConnect</figcaption>
+                                                        </div>
+                                                    </p>
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
@@ -172,7 +202,7 @@
         </div>
         <p style="text-align:right; font-size: 11px;"><a href='https://github.com/SideDot/discovery.intraconnect.github.io' class="footer-link">IntraConnect Discovery ver. 0.2.1</a></p>
     </footer>
-    <script src="./atlas1.js"></script>
+    <script src="./discovery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>
