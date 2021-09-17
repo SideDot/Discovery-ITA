@@ -11,11 +11,148 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link href="https://www.intraconnect.it/circle-cropped.png" rel='icon' type="image/png">
-    <link rel="stylesheet" href="./hiring.css">
-</head>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href='./hire.css'>
+    <!-- Superset CSS -->
+    <link rel="stylesheet" href='./superset.css'>
 <body>
-    <div class="container">
-        <h1>Hello</h1>
+    <div class='row d-flex justify-content-center letter'>
+        <div class='card col-sm-4'>
+            <div class='card-body'>
+                <h1 class='card-title text-center'>Lavora con Noi</h1>
+                <hr>
+                <p class="card-text h5 text-justify text-success">Stiamo cercando persone qualificate che ci aiutino a portare e mantenere costantemente servizi di qualità. Qui sotto sono presenti tutte le occupazioni disponibili.</p>
+                <hr>
+                <ul>
+                    <li>
+                        <p class='h3'>Sviluppatore Frontend</p>
+                        <p class='h5'>Lo sviluppatore del Frontend si occupa della gestione della parte client del sito e gestisce l'integrazione di pipeline con il frontend. Il lavoro richiede che l'assunto sia disponibile per ricevere delle richieste per circa 12 ore ogni giorno lavorativo.</p>
+                        <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#job1" title="Scopri i vantaggi del lavoro">Scopri</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="job1" tabindex="-1" aria-labelledby="job1Label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="job1Label">SVIUPPATORE FRONTEND</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p><strong>REQUISITI</strong></p>
+                                        <p>
+                                            Il candidato deve avere una conoscenza <span class="text-primary">media </span> di:
+                                            <ul>
+                                                <li class='text-purple'>HTML5</li>
+                                                <li class='text-purple'>CSS</li>
+                                                <li class='text-purple'>JavaScript</li>
+                                            </ul><br>
+                                            Il candidato deve anche avere più di 15 anni.
+                                        </p>
+                                        <hr>
+                                        <p><strong>TIPOLOGIA DI IMPIEGO</strong></p>
+                                        <p>L'impiego e' un lavoro a <span class="text-primary">tempo indeterminato </span> con una giornata lavorativa variabile dalle 6 alle 12 ore.</p>
+                                        <hr>
+                                        <p><strong>RETRIBUZIONE</strong></p>
+                                        <p>
+                                            La retribuzione e' rappresentata nella tabella.
+                                            <table class="table">
+                                                <tr>
+                                                    <thead>
+                                                        <th scope="col">Posizione</th>
+                                                        <th scope="col">Liv. Esperienza</th>
+                                                        <th scope="col">Retribuzione</th>
+                                                    </thead>
+                                                </tr>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" class='text-purple'>Project Manager</th>
+                                                        <td class='text-success'>Senior</td>
+                                                        <td><span class='text-primary'>40-80€</span>/task completata</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class='text-purple'>Senior</th>
+                                                        <td class='text-success'>2-4 anni</td>
+                                                        <td><span class='text-primary'>35-80€</span>/task completata</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" class='text-purple'>Junior</th>
+                                                        <td class='text-success'>0-1 anni</td>
+                                                        <td><span class='text-primary'>15-40€</span>/task completata</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <br>
+                                            Le ferie sono <span class='text-info'>100 giorni</span> e i giorni di malattia sono <span class='text-info'>120.</span> Entrambe le categorie <span class='text-danger'>non sono retribuite.</span>
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                        <a href="https://www.intraconnect.it/#contact"><button type='button' class='btn btn-success'>Invia una richiesta</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br><br>
+                    </li>
+                    <li>
+                        <p class='h3'>Sviluppatore Backend</p>
+                        <p class='h5'>Lo sviluppatore del Backend si occupa della gestione del lato server del nostro sito. Il suo lavoro comprende la gestione del database, dei dati utente e del corretto funzionamento delle applicazioni web che forniamo.</p>
+                        <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#job2" title="Scopri i vantaggi del lavoro">Scopri</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="job2" tabindex="-1" aria-labelledby="job2Label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="job2Label">SVIUPPATORE BACKEND</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>REQUISITI</p>
+                                        <hr>
+                                        <p>TIPOLOGIA DI IMPIEGO</p>
+                                        <hr>
+                                        <p>COMPENSAZIONE</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <br><br>                  
+                    </li>
+                    <li>
+                        <p class='h3'>Web Designer</p>
+                        <p class='h5'>Il Web Designer si occupa della gestione e creazione dei vari elementi che compongono la parte "artistica" del nostro sito. In particolare immagini e sfondi, assieme a suggerimenti sulla composizione delle pagine.</p>
+                        <button type="button" class="btn btn-dark btn-lg" data-bs-toggle="modal" data-bs-target="#job3" title="Scopri i vantaggi del lavoro">Scopri</button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="job3" tabindex="-1" aria-labelledby="job3Label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="job3Label">WEB DESIGNER</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>REQUISITI</p>
+                                        <hr>
+                                        <p>TIPOLOGIA DI IMPIEGO</p>
+                                        <hr>
+                                        <p>COMPENSAZIONE</p>   
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Chiudi</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                        <br><br>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>

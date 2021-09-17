@@ -1,0 +1,9 @@
+/* This css is used for every discovery document present. It's main function is to serve as genereal class modifier/creator for bootstrap*/
+
+.text-purple {
+    color: purple;
+}
+
+.bg-purple {
+    background-color: purple;
+}
