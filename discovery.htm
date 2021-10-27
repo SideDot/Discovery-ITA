@@ -10,7 +10,15 @@
     <meta name="author" content="IntraConnect LLC">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://www.intraconnect.it/discovery/discovery.css">
+    <!-- MDBOOTSTRAP -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>   
+    <link rel="stylesheet" href="./discovery.css">
     <link href="https://www.intraconnect.it/circle-cropped.png" rel='icon' type="image/png">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet"/>
@@ -29,7 +37,8 @@
         <a href="#infdev" class="spec-link"><i class="bi bi-code-slash"></i> Changelog</a>
         <a href="#help" class="spec-link"><i class="bi bi-question-lg"></i> Aiuto</a>
         <a href="https://www.intraconnect.it" class="spec-link"><i class="bi bi-box-arrow-up-right"></i> Torna ad IntraConnect</a>
-        <input type="text" placeholder="Cerca in Discovery">
+        <input type="text" placeholder="Cerca in Discovery" list="elements">
+        
     </div>
     <br><br>
     <h1 class='head1 headmodif'>Benvenuto in Discovery</h1>
@@ -70,20 +79,10 @@
     <main>
         <div class="info-discovery">
             <div class="infdev-txt" id="infdev">
-                <center><h1 class="txt-title">ChangeLog | Versione 0.1.1</h1></center>
+                <center><h1 class="txt-title">ChangeLog | Versione 0.5.2</h1></center>
                 <br>
                 <div class="container">
                     <div class="row">
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <img src="./images/needhelp.jpg" alt="aiutaci!" class="card-img-top">
-                                <div class="card-body">
-                                    <h4 class="card-title">Aiutaci</h4>
-                                    <p class="card-text">Discovery serve a condividere il materiale scolastico affinche' altri ne possano beneficiare. Noi facciamo il possibile ma anche tu potresti darci una grande mano. <br></p>
-                                    <a href="https://www.intraconnect.it" target="_blank" class="btn btn-primary">Informati</a>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-sm-4">
                             <div class="card">
                                 <img src="./images/personnel.jpg" alt="personale richiesto" class="card-img-top">
@@ -99,7 +98,7 @@
                                 <img src="./images/Git-Icon-Black.png" alt="personale richiesto" class="card-img-top">
                                 <div class="card-body">
                                     <h4 class="card-title">Prossima Versione</h4>
-                                    <p class="card-text">La prossima versione di Discovery(1.0.0) sarà disponibile dal 27/09/21 con importanti aggiunte.</p><br>
+                                    <p class="card-text">La prossima versione di Discovery(1.0.0) sarà disponibile dal 15/10/21 con importanti aggiunte.</p><br>
                                     <!--button modal activator-->
                                     <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#currentVersion" title="Versione Attuale">v0.2.1</button>
                                     <!-- Modal -->
@@ -112,7 +111,7 @@
                                                 </div>
                                                 <div class="modal-body">
                                                     <p>
-                                                        La versione attuale di Discovery è la seconda delle 10 versioni BETA prima del rilascio completo.
+                                                        La versione attuale di Discovery è la ottava delle 10 versioni BETA prima del rilascio completo.
                                                     </p>
                                                     <p>
                                                         La compatibilità di Discovery con gli schermi piccoli o tendenti al 'quadrato' <strong>non è disponibile al momento.</strong> Tuttavia, le segnalazioni sono bene accette.
@@ -145,14 +144,11 @@
                                                     <p>
                                                         La prossima versione di Discovery includerà delle aggiunte nuove ed importanti:
                                                         <ul>
-                                                            <li>Aggiunta Rapida del materiale</li>
                                                             <li>Barra di ricerca funzionante</li>
                                                             <li>Nuovo Materiale (aggiunto dagli sviluppatori)</li>
                                                         </ul>
                                                         Alcune note sulle seguenti:
                                                         <ol>
-                                                            <li><em><strong>L'Aggiunta Rapida</strong></em> sarà un metodo per inserire il materiale in maniera piu veloce, tramite un form. Per accedere al form si dovrà cliccare sul tasto "+" in alto a destra vicino alla barra di ricerca. Il form si presenterà secondo la struttura di <strong>titolo, descrizione, contenuto e allegati(immagini)</strong>. Non sarà necessario includere del testo nel contenuto(si possono usare immagini di appunti), ma sarà richiesto aggiungere una descrizione breve dell'argomento.</li>
-                                                            <br>
                                                             <li><em><strong>La barra di ricerca</strong></em> non sarà funzionante fino alla prossima versione, oppure, potrebbe esserlo ma malfunzionante. Una volta resa operativa, si potrà trovare un argomento anche dalla home page. Una volta che i cambiamenti saranno effettuati, la barra di ricerca non si troverà più in alto, <strong>ma al posto del tasto 'vai al catalogo'.</strong></li>
                                                             <br>
                                                             <li><em><strong>Il Nuovo Materiale</strong></em> aggiunto dagli sviluppatori sarà inerente a materie non avanzate in quanto siamo appena arrivati in seconda :). Crediamo possa variare da materie come la Matematica fino alla Fisica.</li>
@@ -170,6 +166,16 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <img src="./images/needhelp.jpg" alt="aiutaci!" class="card-img-top">
+                                <div class="card-body">
+                                    <h4 class="card-title">Aiutaci</h4>
+                                    <p class="card-text">Discovery serve a condividere il materiale scolastico affinche' altri ne possano beneficiare. Sei un bravo studente? Hai degli appunti belli? Condividili qui su Discovery!<br></p>
+                                    <a href="other/help.htm" target="_blank" class="btn btn-primary">Informati</a>
                                 </div>
                             </div>
                         </div>

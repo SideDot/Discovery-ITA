@@ -2,7 +2,7 @@ var currentVersion = 0.2;
 var nextVersion = 1.0;
 //COUNTDOWN NEXT VERSION -- UPDATE EVERY CHANGE
 // Set the date we're counting down to
-var countDownDate = new Date("Sep 27, 2021 12:00:00").getTime();
+var countDownDate = new Date("Nov 15, 2021 12:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -17,6 +17,7 @@ var x = setInterval(function() {
   // If the count down is finished, write some text
   if (distance < 0) {
     clearInterval(x);
+    document.getElementById("counterActive").innerHTML = "";
     document.getElementById("counterExpired").innerHTML = "La versione " + nextVersion + " è già stata pubblicata.";
   }
 }, 1000);
