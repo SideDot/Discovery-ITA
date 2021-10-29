@@ -64,32 +64,6 @@ main a{
   }
 }
 
-.spec-link {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.07em;
-  display: inline-block;
-  position: relative;
-}
-.spec-link:after {    
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 4px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-.spec-link:hover:after { 
-  width: 100%; 
-  left: 0; 
-}
-
-
 .head1 {
     color: white;
     text-align: center;
